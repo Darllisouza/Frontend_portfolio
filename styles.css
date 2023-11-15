@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+
+/* Barra de navegacao */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav-item a {
+  margin-right: 2.0rem;
+}
+
+#logo {
+  color: rgb(70, 70, 89);
+  font-size: 1.5rem;
+}
+
+#logo:hover {
+  color: #f3406a;
+}
+
+#logo a {
+  text-decoration: none;
+  color: inherit; /* Para herdar a cor do texto do pai (#logo) */
+}
+
+#logo a:hover {
+  color: #f3406a; /* Cor ao passar o mouse (pode ser personalizada conforme necessário) */
+}
+
+strong {
+  color: #f3406a;
+  
+/* apresentacao */
+}
+.hero {
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(232, 189, 199, 0.482);
+}
+.hero h2 {
+ max-width: 35.0rem;
+ font-size: 2.0rem;
+}
+
+#fotoperfil {
+  position: relative;
+  width: 15.0rem;
+  margin: 2rem;
+  border-radius: 100%;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(45deg, hsl(33, 100%, 73%), rgb(221, 25, 84)) border-box;
+  border: 5px solid transparent;
+}
+
+h3 {
+  color: #f3406a;
+  font-size: 3.0rem;
+  
+}
+#Tecnologias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem;
+}
+
+.icones {
+  margin-top: 1rem;
+}
+
+.icons {
+  width: 50px;
+  margin: 1rem;
+}
+  
+#Sobre-mim {
+  background-color: rgba(253, 232, 236, 0.482);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 6rem;
+}
+
+.conteudoSobre {
+  display: flex;
+}
+  
+.imgSobre {
+  width: 150px;
+  height: 150px;
+  margin-right: 2rem;
+}
+  
+#sobre p {
+  max-width: 700px;
+  line-height: 2;
+}
+  
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;margin-top: 1rem;
+  cursor: pointer;}
+
+
+
+
+.wrapper {
+   display: flex;
+  list-style: none;
+}
+
+
+.wrapper .icon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 1.5rem;
+  margin: 1.0rem;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: auto;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background: #333333;
+  color: #ffffff;
+}
+
+.wrapper .Linkedin:hover,
+.wrapper .Linkedin:hover .tooltip,
+.wrapper .Linkedin:hover .tooltip::before {
+  background: #1877F2;
+  color: #ffffff;
+}
