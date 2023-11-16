@@ -196,3 +196,93 @@ footer {
   background: #1877F2;
   color: #ffffff;
 }
+
+/* Seu CSS existente */
+
+/* Adicione estas regras dentro de uma media query para telas menores */
+
+@media screen and (max-width: 768px) {
+  /* Barra de Navegação */
+  .navbar {
+    padding: 1rem 0;
+  }
+
+  #logo {
+    font-size: 1.2rem;
+  }
+
+  .nav-item a {
+    margin-right: 1rem;
+  }
+
+  /* Seções */
+  .hero {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+    max-width: 100%;
+  }
+
+  /* Tecnologias */
+  #Tecnologias {
+    padding: 3rem 1rem;
+  }
+
+  .icones {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .icons {
+    width: 40px;
+    margin: 0.5rem;
+  }
+
+  /* Sobre mim */
+  #Sobre-mim {
+    padding: 3rem 1rem;
+  }
+
+  .conteudoSobre {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imgSobre {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+
+  #sobre p {
+    max-width: 100%;
+    line-height: 1.5;
+  }
+
+  /* Ícones de Redes Sociais */
+  .wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .wrapper .icon {
+    margin: 0.5rem;
+    width: 40px;
+    height: 40px;
+    padding: 1rem;
+    font-size: 16px;
+  }
+
+  .wrapper .tooltip {
+    font-size: 12px;
+  }
+}
+
+
+
