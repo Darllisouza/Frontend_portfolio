@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-
+/* Estilos gerais */
 * {
   margin: 0;
   padding: 0;
@@ -64,6 +64,7 @@ strong {
   border: 5px solid transparent;
 }
 
+/* Estilos para outras seçoes */
 h3 {
   color: #f3406a;
   font-size: 3.0rem;
@@ -119,7 +120,7 @@ footer {
 
 
 
-
+/* Estilos icones linkedin e github */
 .wrapper {
    display: flex;
   list-style: none;
@@ -170,6 +171,10 @@ footer {
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
+/* quando o mouse passa por cima dele (:hover)
+alterando a cor de fundo e  adicionando estilos visuais adicionais, 
+como uma dica de ferramenta (tooltip)*/
+
 .wrapper .icon:hover .tooltip {
   top: -45px;
   opacity: 1;
@@ -197,11 +202,11 @@ footer {
   color: #ffffff;
 }
 
-/* Seu CSS existente */
 
-/* Adicione estas regras dentro de uma media query para telas menores */
+/*regras dentro de uma media query para telas menores */
 
 @media screen and (max-width: 768px) {
+  
   /* Barra de Navegação */
   .navbar {
     padding: 1rem 0;
@@ -222,8 +227,15 @@ footer {
   }
 
   .hero h2 {
-    font-size: 1.5rem;
+    font-size: 1.0rem;
     max-width: 100%;
+  }
+
+  #fotoperfil {
+    width: 100px; /* Reduzindo o tamanho da foto para se ajustar */
+    height: 100px;
+    margin: 3rem;
+    border-radius: 100%;
   }
 
   /* Tecnologias */
@@ -241,6 +253,7 @@ footer {
   .icons {
     width: 40px;
     margin: 0.5rem;
+    
   }
 
   /* Sobre mim */
@@ -268,7 +281,7 @@ footer {
   /* Ícones de Redes Sociais */
   .wrapper {
     flex-wrap: wrap;
-    justify-content: center;
+    max-width: 100%;
   }
 
   .wrapper .icon {
